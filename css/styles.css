@@ -29,10 +29,12 @@ header .container {
   display: flex;
   align-items: center;
   height: 80px;
+}
+header {
   border-bottom: 1px solid #ececec;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -73,7 +75,6 @@ header .container {
   list-style-type: none;
 }
 .navigation-link {
-  margin-right: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -83,7 +84,12 @@ header .container {
   text-decoration: none;
   color: var(--primary-color);
 }
-
+.navigation > li {
+  margin-right: 50px;
+}
+.navigation > li:last-child {
+  margin-right: 0;
+}
 .navigation-link:hover {
   color: var(--logo-color);
 }
@@ -109,14 +115,15 @@ header .container {
   padding-bottom: 94px;
 }
 .hero {
-  padding: 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--hero-background-color);
 }
-.hero .container {
-  padding: 291px 252px 109px 252px;
-}
 h1 {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -165,9 +172,9 @@ h1 {
   color: var(--secondary-color);
 }
 .about-us-head {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 1.67;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
@@ -256,10 +263,10 @@ address {
 /* CSS for portfolio */
 .portfolio-options {
   display: flex;
-  width: 650px;
   list-style-type: none;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 .portfolio-button {
   margin-right: 8px;
@@ -291,7 +298,7 @@ address {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 34px;
+  margin-top: 50px;
   list-style-type: none;
 }
 .project {
